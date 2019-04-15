@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Schools Asia</title>
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+    <meta name="description" content="Private & International Education Fair Organizer">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel = "stylesheet" href="css/bootstrap.css" />
+    <link rel = "stylesheet" href="css/application.css" />
+    <script src="js/jquery-3.3.1.js"></script>
+</head>
+
+<body>
+    
+    <!-- NAV BAR FOR MEMBERS VIEW ONLY (after member log in) -->
+    <nav class="fixed-top bg-dark d-none">
+        <button class="btn btn-success mr-2">Book Events</button>
+        <button class="btn btn-success mr-2">My Bookings</button>
+        <button class="btn btn-success mr-2">My Profile</button>
+        <div class="float-right">
+            <span class="text-white"> user1@mail.com | </span>
+            <button class="btn btn-danger">Logout</button>
+        </div>
+    </nav>
+
+    <!-- NAV BAR FOR PUBLIC VIEW (before member log in) -->
+    <nav class="fixed-top bg-dark">
+        <div class="float-right">
+            <button class="btn btn-success mr-2">Exhibitor Sign In</button>
+        </div>
+    </nav>
+
+    <div class="m-auto mobile-100">
+        <header>
+            <div class="d-flex justify-content-between mt-4">
+                <div>
+                    <img src="assets/header_logo.jpeg" width="360" height="180">
+                </div>
+            </div>
+
+            <!-- NAV BAR ALWAYS AVAILABLE -->
+            <nav id="landing_nav" class="d-flex justify-content-between align-items-center mt-4">
+                <a href="index.html">ABOUT US</a>
+                <a href="mission.html">OUR MISSION</a>
+                <a href="upcoming_event.html">UPCOMING EVENTS</a>
+                <a href="past_event.html">PAST EVENTS</a>
+                <a href="schools.html">MALAYSIA SCHOOLS</a>
+            </nav>
+        </header>
+        
+
+        <!-- ------------------------------------------------------------------------ -->
+        <div class="pt-4">
+            
+            <!-- CONTENT -->
+            <!-- CAROUSEL FOR ADVERTISEMENT -->
+            <div>
+                <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+                    <div class="carousel-inner">
+
+                        <div class="carousel-item active" data-interval="3000" style="height: 50vh;">
+                            <img src="assets/tesla-cat.jpg" class="d-block w-100">
+                        </div>
+                        
+                        <div class="carousel-item" data-interval="3000" style="height: 50vh;">
+                            <img src="assets/acmar.png" class="d-block w-100">
+                        </div>
+
+                    </div>
+                    <div class="carousel-control-dir">
+                        <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            <section class="text-justify">
+                <!-- VIDEO FOR ABOUT US -->
+                <div id="about-video">
+                    <video autoplay="autoplay" loop="loop" muted="muted" controls="controls" id="video-auto" src="assets/avengers.mp4"></video>
+                </div>
+            
+                <h2 class="text-title-highlight">ABOUT US</h2>
+                <p>
+                    TheSchools.Asia provides a platform where parents can research, compare and enrol into the school that best suits their needs, all of our affiliates are the best in their respective fields and are assured to meet the highest of standards.
+                    <br><br>
+                    Working closely with best international and private schools available that we have partnered with in Malaysia, we have cumulated a list of top schools which parents can identify the best option for them and their kids, TheSchools.Asia provides a platform where parents can research, compare and enrol into the school that best suits their needs, all of our affiliates are the best in their respective fields and are assured to meet the highest of standards.
+                    <br><br>
+                    For any enquires as to our scholarship programs, please feel free to contact us!
+                </p>
+            </section>    
+        
+        </div>
+        <!-- ------------------------------------------------------------------------ -->
+    </div>
+
+    <!-- FOOTER -->
+    <br><br><br>
+    <footer>
+        <div class="mobile-100 m-auto pt-5 pb-5 text-white row w-100 justify-content-around">
+
+            <div class="text-center col-xl-3 col-sm-12 mb-4">
+                <img src="assets/footer_logo.jpeg" width="200" height="200">
+            </div>    
+            
+
+            <div class="col-xl-4 col-sm-6">
+                <h5> CONTACT US </h5>
+                <p>
+                    Tel: 03-3343 6343
+                    <br> Fax: 03-3343 6346
+                    <br> Email: info@theschools.asia
+                </p>
+                <p>
+                    019-355 0 886 (Jean)
+                    <br> 019-316 4448 (Anthony)
+                    <br> 012-377 1060 (Eve)
+                </p>        
+            </div>
+
+            <div class="col-xl-4 col-sm-6">
+                <h6 class="font-weight-bold"> Correspondence Address: </h6>
+                <p>
+                    27, Jalan Kelicap 48, Taman Muhibah, KAW 17, 41050 Klang, Selangor.
+                </p>
+
+                <h6 class="font-weight-bold"> Office Address: </h6>
+                <p>
+                    No. 44, 1st Floor, Lorong Kasawari 4, Taman Eng Ann, 41150 Klang, Selangor.
+                </p>    
+        
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    <script>
+        $(document).ready(function () {
+            $('.carousel').carousel({
+                interval: 3000
+            });
+        
+            $('.carousel').carousel('cycle');
+        });
+    </script>
+
+
+
+
+</body>
+</html>
