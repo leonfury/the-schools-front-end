@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Schools Asia</title>
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+    <meta name="description" content="Private & International Education Fair Organizer">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel = "stylesheet" href="css/bootstrap.css" />
+    <link rel = "stylesheet" href="css/application.css" />
+    <script src="js/jquery-3.3.1.js"></script>
+</head>
+
+<body>
+    
+    <!-- NAV BAR FOR MEMBERS VIEW ONLY (after member log in) -->
+    <nav class="fixed-top bg-dark d-none">
+        <button class="btn btn-success mr-2">Book Events</button>
+        <button class="btn btn-success mr-2">My Bookings</button>
+        <button class="btn btn-success mr-2">My Profile</button>
+        <div class="float-right">
+            <span class="text-white"> user1@mail.com | </span>
+            <button class="btn btn-danger">Logout</button>
+        </div>
+    </nav>
+
+    <!-- NAV BAR FOR PUBLIC VIEW (before member log in) -->
+    <nav class="fixed-top bg-dark">
+        <div class="float-right">
+            <button class="btn btn-success mr-2">Exhibitor Sign In</button>
+        </div>
+    </nav>
+
+    <div class="m-auto mobile-100">
+        <header>
+            <div class="d-flex justify-content-between mt-4">
+                <div>
+                    <img src="assets/header_logo.jpeg" width="360" height="180">
+                </div>
+            </div>
+
+            <!-- NAV BAR ALWAYS AVAILABLE -->
+            <nav id="landing_nav" class="d-flex justify-content-between align-items-center mt-4">
+                <a href="index.html">ABOUT US</a>
+                <a href="mission.html">OUR MISSION</a>
+                <a href="upcoming_event.html">UPCOMING EVENTS</a>
+                <a href="past_event.html">PAST EVENTS</a>
+                <a href="schools.html">MALAYSIA SCHOOLS</a>
+            </nav>
+        </header>
+        
+
+        <div class="pt-4">
+            <!-- ------------------------------------------------------------------------ -->
+            
+            <h2 class="text-title-highlight"> Schools In Malaysia </h2>
+            <br>
+            <input class="form-control w-75 d-inline" placeholder="Type in School Name">
+            <button class="btn btn-primary d-inline">Search for School </button>
+            <br><br>
+            <label class="d-inline">Filter by State</label>
+            <select class="custom-select w-25">
+                <option>Cheras</option>
+                <option>Ipoh</option>
+                <option>KL</option>
+                <option>Mont Kiara</option>
+            </select>
+
+            <br><br>
+
+            <!-- SCHOOL LIST -->
+            <table class="table table-hover" id="public-school">
+                
+                <tr>
+                    <td class="school-badge">
+                        <img src="assets/real-logo.png" size="100%">
+                    </td>
+                    <td class="w-100 text-justify">
+                        <h4><a class="text-highlight" href="school_show.html">Seri Cahaya International School</a></h4>
+                        
+                        <!-- LIMITED TO 200 CHARACTER OF SCHOOL DESCRIPTION -->
+                        <div>Introduction: R.E.A.L Schools is a diverse community of learning with more than 30 years of history in nurturing students who achieve real transformation and success. Today, we have three school c<a class="font-italic text-primary font-size-small" href="school_show.html"> ...click here to learn more</a>
+                        </div>
+                    </td> 
+                </tr>
+
+                <tr>
+                    <td class="school-badge">
+                        <img src="assets/acmar.png" size="100%">
+                    </td>
+                    <td class="w-100 text-justify">
+                        <h4><a class="text-highlight" href="school_show.html">Sri Acmar International School</a></h4>
+                        <div>
+                            <ul>
+                                <li>Year Established: 2016</li>
+                                <li>Location: Klang, Selangor</li>
+                                <li>Student Population/Average Class Size: 500/25</li>
+                                <li>Levels of Education Offered: Preschool to Year 11</li>
+                                <li>Curricula/Progra<a class="font-italic text-primary font-size-small" href="school_show.html"> ...click here to learn more</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+
+            </table>
+            <!-- ------------------------------------------------------------------------ -->
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <br><br><br>
+    <footer>
+        <div class="mobile-100 m-auto pt-5 pb-5 text-white row w-100 justify-content-around">
+
+            <div class="text-center col-xl-3 col-sm-12 mb-4">
+                <img src="assets/footer_logo.jpeg" width="200" height="200">
+            </div>    
+            
+
+            <div class="col-xl-4 col-sm-6">
+                <h5> CONTACT US </h5>
+                <p>
+                    Tel: 03-3343 6343
+                    <br> Fax: 03-3343 6346
+                    <br> Email: info@theschools.asia
+                </p>
+                <p>
+                    019-355 0 886 (Jean)
+                    <br> 019-316 4448 (Anthony)
+                    <br> 012-377 1060 (Eve)
+                </p>        
+            </div>
+
+            <div class="col-xl-4 col-sm-6">
+                <h6 class="font-weight-bold"> Correspondence Address: </h6>
+                <p>
+                    27, Jalan Kelicap 48, Taman Muhibah, KAW 17, 41050 Klang, Selangor.
+                </p>
+
+                <h6 class="font-weight-bold"> Office Address: </h6>
+                <p>
+                    No. 44, 1st Floor, Lorong Kasawari 4, Taman Eng Ann, 41150 Klang, Selangor.
+                </p>    
+        
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+</body>
+</html>
