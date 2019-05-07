@@ -1,0 +1,480 @@
+
+@media only screen and (max-width: 1200px) {
+
+    html {
+        font-size: 59%;
+    }
+
+
+    /* BASE */
+
+    .tsasia-logo-bg {
+        width: 80vw;
+        opacity: .8;
+    }
+
+
+    /* CONTENT */
+
+    .content-container {
+        width: 97vw;
+
+        grid-template-columns: minmax(-webkit-min-content, 1fr);
+
+        grid-template-columns: minmax(min-content, 1fr);
+        grid-template-rows: -webkit-min-content .5vw -webkit-max-content .5vw -webkit-min-content minmax(2rem, 1fr) -webkit-min-content;
+        grid-template-rows: min-content .5vw max-content .5vw min-content minmax(2rem, 1fr) min-content;
+    }
+
+
+    /* ADVERTISMENT BANNER */
+
+    .banner {
+        grid-column: 1 / 2;
+        grid-row: 5 / 6;
+    }
+
+    .infomation {
+        grid-column: 1 / 2;
+        grid-row: 5 / 6;
+    }
+
+
+    /* SIDEBAR */
+
+    .side-container {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+        grid-template-rows: 5rem;
+        grid-auto-rows: 5rem;
+        grid-gap: .5rem;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: start;
+    }
+
+    .side-btn {
+        text-align: center;
+        padding: 1rem .5rem;
+        background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(28, 181, 224, 1)), color-stop(rgba(0, 0, 70, 1)), to(rgba(0, 0, 70, 1)));
+        background-image: linear-gradient(to bottom, rgba(28, 181, 224, 1), rgba(0, 0, 70, 1), rgba(0, 0, 70, 1));
+        opacity: .4;
+    }
+
+    .side-btn:hover {
+        margin: .5rem 0;
+        background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(28, 181, 224, 1)), to(rgba(0, 0, 70, 1)));
+        background-image: linear-gradient(to top, rgba(28, 181, 224, 1), rgba(0, 0, 70, 1));
+        opacity: .8;
+    }
+
+    .side-btn:active {
+        margin: 0;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        opacity: 1;
+    }
+
+
+    /* COPYRIGHT FOOTER */
+
+    .copyright-container {
+        grid-column: 1 / 2;
+        grid-row: 7 / -1;
+    }
+
+    .copyright {
+        font-size: 1.5rem;
+    }
+}
+
+
+@media only screen and (max-width: 1024px) {
+    html {
+        font-size: 53.125%;
+    }
+
+    .content-container {
+        width: 98vw;
+        padding: .6vw 0;
+    }
+
+    .catalog-search {
+        padding: 3rem 0;
+        grid-template-columns: 1fr 60vw 25vw 1fr;
+    }
+}
+
+
+@media only screen and (max-width: 800px) {
+    html {
+        font-size: 49%;
+    }
+
+    .tsasia-logo-bg {
+        width: 85vw;
+        opacity: .5;
+    }
+
+    .content-container {
+        width: 99vw;
+    }
+
+    .contact-grid {
+        grid-gap: 2.5rem;
+    }
+
+
+    .about-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: -webkit-min-content;
+        grid-template-rows: min-content;
+    }
+
+    .about-video {
+        grid-column: 4 / -1;
+        grid-row: 1 / -1;
+    }
+
+    .about-content {
+        grid-column: 1 / 4;
+        grid-row: 1 / -1;
+    }
+
+    .events-grid {
+        padding: 1.5rem;
+        padding-top: 13rem;
+    }
+
+    .mission-article {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: -webkit-min-content;
+        grid-template-rows: min-content;
+    }
+
+    .mission-content {
+        grid-column: 1 / 4;
+        grid-row: 1 / -1;
+    }
+
+    .mission-picture {
+        grid-column: 4 / -1;
+        grid-row: 1 / -1;
+    }
+
+    .catalog-select {
+        width: 35vw;
+    }
+
+    .catalog-content {
+        padding-top: 2rem;
+    }
+
+    .side-container {
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr -webkit-max-content -webkit-max-content 1fr;
+        grid-template-columns: 1fr max-content max-content 1fr;
+        grid-template-rows: repeat(2,-webkit-min-content);
+        grid-template-rows: repeat(2,min-content);
+        grid-column-gap: 10rem;
+    }
+
+    .contact-tel-1 {
+        grid-column: 2 / span 1;
+        grid-row: 1 / 2;
+    }
+    
+    .contact-tel-2 {
+        grid-column: 3 / span 1;
+        grid-row: 1 / 2;
+    }
+    
+    .contact-add-1 {
+        grid-column: 2 / span 1;
+        grid-row: 2 / 3;
+    }
+    
+    .contact-add-2 {
+        grid-column: 3 / span 1;
+        grid-row: 2 / 3;
+    }
+
+    .contact-logo {
+        grid-column: 2 / span 2;
+        grid-row: 3 / 4;
+
+        padding-top: 3rem;
+        border-top: 1px solid #888;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    html {
+        font-size: 49%;
+    }
+
+    .tsasia-logo-bg {
+        width: 90vw;
+    }
+
+    .content-container {
+        width: 99vw;
+        padding: .5vw 0;
+        margin: 0 auto;
+    }
+
+    .header-grid {
+        padding: 1vw 0 1rem 3vw;
+        text-align: left;
+        grid-column-gap: 3vw;
+
+        display: grid;
+        grid-template-columns: 3fr 7fr;
+    }
+
+    .header-hl {
+        font-size: 5rem;
+        margin-top: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .header-sl {
+        font-size: 2.8rem;
+    }
+
+   .about-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: -webkit-min-content;
+        grid-template-rows: min-content;
+    }
+
+    .about-video {
+        grid-column: 2 / -1;
+        grid-row: 1 / -1;
+    }
+
+    .about-content {
+        grid-column: 1 / 2;
+        grid-row: 1 / -1;
+    }
+
+    .mission-article {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: -webkit-min-content;
+        grid-template-rows: min-content;
+    }
+
+    .mission-content {
+        grid-column: 1 / 2;
+        grid-row: 1 / -1;
+    }
+
+    .mission-picture {
+        grid-column: 2 / -1;
+        grid-row: 1 / -1;
+    }
+
+    .contact-grid p {
+        font-size: 1.8rem;
+    }
+
+    .contact-hl {
+        font-size: 1.8rem;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+
+    .content-container {
+        width: 100vw;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .header-grid {
+        padding: 0;
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, -webkit-min-content);
+        grid-template-rows: repeat(4, min-content);
+        -webkit-box-align: end;
+            -ms-flex-align: end;
+                align-items: end;
+        justify-items: center;
+    }
+
+    .header-logo {
+        grid-column: 1 / -1;
+        grid-row: 3 / 4;
+    }
+
+    .tsasia-logo-sm {
+        width: auto;
+        height: 15vh;
+        margin-top: 3rem;
+    }
+
+    .header-headline {
+        padding: 0 1rem;
+
+        grid-column: 1 / -1;
+        grid-row: 4 / 5;
+    }
+
+    .header-hl {
+        text-align: center;
+    }
+
+    .header-sl {
+        font-size: 3rem;
+        text-align: center;
+        line-height: 1;
+        margin-bottom: 2rem;
+    }
+
+    .header-break {
+        grid-column: 1 / -1;
+        grid-row: 2 / 3;
+
+        height: 1px;
+        width: 100%;
+        background-color: #888;
+    }
+
+    .header-button {
+        grid-column: 1 / -1;
+        grid-row: 1 / 2;
+
+        margin-top: 3.5rem;
+        margin-bottom: 1.1rem;
+        -webkit-transform: translateX(-4vw);
+                transform: translateX(-4vw);
+    }
+
+    .header-btn {
+        -webkit-transform: translateX(-3vw);
+                transform: translateX(-3vw);
+    }
+
+    .side-container {
+        padding: 0 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(1fr, 1fr));
+        grid-template-rows: 4.2rem;
+        grid-auto-rows: 4.2rem;
+    }
+
+    .hl {
+        font-size: 8rem;
+        line-height: .8;
+        top: 0;
+        left: 1rem;
+    }
+
+    .catalog-container {
+        padding: 4rem 0;
+    }
+
+    .catalog-grid {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+    .events-grid {
+        padding-top: 8rem;
+    }
+
+    .catalog-search-grid {
+        padding-top: 14rem;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: -webkit-min-content -webkit-min-content;
+        grid-template-rows: min-content min-content;
+    }
+
+    .about-video {
+        grid-column: 1 / -1;
+        grid-row: 1 / 2;
+    }
+
+    .about-content {
+        grid-column: 1 / -1;
+        grid-row: 2 / -1;
+    }
+
+
+    .mission-article {
+        grid-template-columns: 1fr;
+        grid-template-rows: -webkit-min-content -webkit-min-content;
+        grid-template-rows: min-content min-content;
+    }
+    
+    .mission-picture {
+        grid-column: 1 / -1;
+        grid-row: 1 / 2;
+    }
+
+    .mission-content {
+        grid-column: 1 / -1;
+        grid-row: 2 / -1;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5,-webkit-min-content);
+        grid-template-rows: repeat(5,min-content);
+        grid-gap: 3rem;
+    }
+
+    .contact-tel-1 {
+        grid-column: 1 / span 1;
+        grid-row: 1 / 2;
+    }
+    
+    .contact-tel-2 {
+        grid-column: 1 / span 1;
+        grid-row: 2 / 3;
+    }
+    
+    .contact-add-1 {
+        grid-column: 1 / span 1;
+        grid-row: 3 / 4;
+    }
+    
+    .contact-add-2 {
+        grid-column: 1 / span 1;
+        grid-row: 4 / 5;
+    }
+
+    .contact-logo {
+        grid-column: 1 / span 1;
+        grid-row: 5 / 6;
+    }
+
+    .contact-grid p {
+        font-size: 2rem;
+    }
+
+    .contact-hl {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width:375px) {
+    .up-events-grid {
+        padding-top: 14rem;
+    }
+}
+
+.copyright {
+    font-size: 1.3rem;
+}
