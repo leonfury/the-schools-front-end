@@ -3594,7 +3594,7 @@ input[type="button"].btn-block {
   background-color: rgba(0, 123, 255, 0.5);
 }
 
-.custom-select {
+/* .custom-select {
   display: inline-block;
   width: 100%;
   height: calc(2.25rem + 2px);
@@ -3609,7 +3609,7 @@ input[type="button"].btn-block {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-}
+} */
 
 .custom-select:focus {
   border-color: #80bdff;
